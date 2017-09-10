@@ -1,0 +1,12 @@
+body {
+	padding-top:50px;
+	background: url(../bg.png) top left repeat;
+    background-position: top left;
+}
+.jumbotron{
+    background-color: transparent;
+}
+footer {    text-shadow: 0 0.03rem 0.1rem rgba(0,0,0,.3);
+}
+#header {    text-shadow: 0 0.05rem 0.1rem rgba(0,0,0,.5);
+}

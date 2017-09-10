@@ -1,0 +1,18 @@
+{% extends "OCCoreBundle::layout.html.twig" %}
+
+{% block title %}
+  Home - {{ parent() }}
+{% endblock %}
+
+{% block body %}
+
+  <h2><span class="glyphicon glyphicon-home"></span>  Bienvenue à l'accueil !</h2>
+
+  {% for message in app.session.flashbag.get('info') %}
+    <div class="alert alert-info"><span class="glyphicon glyphicon-envelope"></span> : {{ message }}</div>
+  {% endfor %}
+
+  <h3><span class="glyphicon glyphicon-time"></span>  Derniers posts</h3>
+  {{ render(controller("OCPlatformBundle:Advert:menu", {'limit': 3})) }}
+
+{% endblock %}
