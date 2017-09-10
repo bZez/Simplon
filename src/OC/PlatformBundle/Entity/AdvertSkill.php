@@ -35,7 +35,6 @@ class AdvertSkill
    */
   private $skill;
 
-  // ... vous pouvez ajouter d'autres attributs bien sûr
 
   /**
    * @return integer
